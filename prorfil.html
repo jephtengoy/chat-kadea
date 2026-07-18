@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil | Kadea Chat</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer">
+
+    <style>
+        @media (max-width: 767px) {
+            #iconRail { display: none !important; }
+            #mobileNav { display: flex !important; }
+        }
+        @media (min-width: 768px) {
+            #mobileNav { display: none !important; }
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 min-h-[100dvh]">
+
+<div class="flex min-h-[100dvh]">
+
+    <aside id="iconRail" class="hidden md:flex w-16 shrink-0 bg-[#111b21] flex-col justify-between items-center py-6">
+        <nav class="flex flex-col items-center gap-6">
+            <a href="chat.html"
+                class="flex items-center justify-center w-10 h-10 rounded-lg text-gray-400 hover:text-white hover:bg-white/10 transition"
+                title="Discussions">
+                <i class="fa-solid fa-comments text-lg"></i>
+            </a>
+            <a href="#"
+                class="flex items-center justify-center w-10 h-10 rounded-lg text-gray-400 hover:text-white hover:bg-white/10 transition"
+                title="Appels">
+                <i class="fa-solid fa-phone text-lg"></i>
+            </a>
+            <a href="prorfil.html"
+                class="flex items-center justify-center w-10 h-10 rounded-lg text-white bg-white/10"
+                title="Profil">
+                <i class="fa-solid fa-user text-lg"></i>
+            </a>
+        </nav>
+
+        <button id="logoutBtn"
+            type="button"
+            class="flex items-center justify-center w-10 h-10 rounded-lg text-red-400 hover:text-red-300 hover:bg-white/10 transition"
+            title="Déconnexion">
+            <i class="fa-solid fa-right-from-bracket text-lg"></i>
+        </button>
+    </aside>
+
+    <main class="flex-1 min-w-0 pb-16 md:pb-0">
+
+        <header class="bg-white h-14 sm:h-16 border-b flex items-center justify-between px-4 sm:px-8">
+            <h1 class="text-xl sm:text-2xl font-bold text-blue-600">Profil</h1>
+            <a href="chat.html" class="text-sm text-blue-600 hover:underline">Retour aux chats</a>
+        </header>
+
+        <section class="max-w-5xl mx-auto py-8 sm:py-10 px-4 sm:px-6">
+
+            <div class="text-center">
+                <div id="profileAvatar"
+                    class="w-28 h-28 sm:w-36 sm:h-36 rounded-full mx-auto border-4 border-white shadow-lg bg-blue-600 text-white flex items-center justify-center text-3xl sm:text-4xl font-bold overflow-hidden">
+                </div>
+
+                <h2 id="fullName" class="text-2xl sm:text-3xl font-bold mt-4 break-words"></h2>
+                <p id="email" class="text-gray-500 text-sm sm:text-base break-all"></p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-4 sm:gap-6 mt-8 sm:mt-10">
+                <div class="bg-white rounded-xl shadow p-5 sm:p-6">
+                    <h3 class="font-bold text-lg mb-4">Informations</h3>
+                    <p class="text-sm sm:text-base"><strong>Nom :</strong> <span id="profileName"></span></p>
+                    <p class="mt-2 text-sm sm:text-base break-all"><strong>Email :</strong> <span id="profileEmail"></span></p>
+                </div>
+
+                <div class="bg-white rounded-xl shadow p-5 sm:p-6">
+                    <h3 class="font-bold text-lg mb-4">Sécurité</h3>
+                    <p class="text-sm sm:text-base">✔ Compte actif</p>
+                    <p class="mt-2 text-sm sm:text-base">✔ Authentifié</p>
+                    <p class="mt-2 text-sm sm:text-base">✔ Utilisateur enregistré</p>
+                </div>
+            </div>
+
+            <div class="mt-8 sm:mt-10 flex flex-col gap-3 sm:gap-4 max-w-md mx-auto">
+                <button type="button" class="bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg">
+                    Modifier le profil
+                </button>
+                <button type="button" class="bg-gray-200 hover:bg-gray-300 py-3 rounded-lg">
+                    Changer le mot de passe
+                </button>
+                <button id="logoutButton" type="button" class="text-red-600 font-bold py-2">
+                    Déconnexion
+                </button>
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<nav id="mobileNav" class="hidden fixed bottom-0 inset-x-0 h-14 bg-[#111b21] text-gray-400 items-center justify-around z-20 border-t border-white/10">
+    <a href="chat.html" class="flex flex-col items-center gap-0.5 text-xs hover:text-white">
+        <i class="fa-solid fa-comments text-lg"></i>
+        <span>Chats</span>
+    </a>
+    <a href="prorfil.html" class="flex flex-col items-center gap-0.5 text-white text-xs">
+        <i class="fa-solid fa-user text-lg"></i>
+        <span>Profil</span>
+    </a>
+    <button id="logoutBtnMobile" type="button" class="flex flex-col items-center gap-0.5 text-xs text-red-400">
+        <i class="fa-solid fa-right-from-bracket text-lg"></i>
+        <span>Sortir</span>
+    </button>
+</nav>
+
+<script src="js/config.js"></script>
+<script src="js/profil.js"></script>
+
+</body>
+</html>

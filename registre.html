@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Créer un compte | Kadea Chat</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-slate-100 flex items-center justify-center min-h-screen">
+
+    <div class="w-full max-w-md bg-white rounded-2xl shadow-xl p-8">
+
+        <!-- Logo -->
+        <div class="text-center mb-8">
+            <h1 class="text-3xl font-bold text-blue-600">
+                Kadea Chat
+            </h1>
+
+            <p class="text-gray-500 mt-2">
+                Créez votre compte
+            </p>
+        </div>
+
+        <!-- Zone des messages -->
+        <div
+            id="message"
+            class="hidden mb-4 rounded-lg p-3 text-sm">
+        </div>
+
+        <!-- Formulaire -->
+        <form id="registerForm" class="space-y-5">
+
+            <!-- Nom complet -->
+            <div>
+                <label
+                    for="fullName"
+                    class="block text-sm font-medium mb-2">
+
+                    Nom complet
+
+                </label>
+
+                <input
+                    id="fullName"
+                    type="text"
+                    placeholder="Ex : Jephte Ngoy"
+                    class="w-full border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                >
+            </div>
+
+            <!-- Email -->
+            <div>
+                <label
+                    for="email"
+                    class="block text-sm font-medium mb-2">
+
+                    Adresse email
+
+                </label>
+
+                <input
+                    id="email"
+                    type="email"
+                    placeholder="exemple@email.com"
+                    class="w-full border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                >
+            </div>
+
+            <!-- Mot de passe -->
+            <div>
+                <label
+                    for="password"
+                    class="block text-sm font-medium mb-2">
+
+                    Mot de passe
+
+                </label>
+
+                <input
+                    id="password"
+                    type="password"
+                    placeholder="********"
+                    class="w-full border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                >
+            </div>
+
+            <!-- Confirmation du mot de passe -->
+            <div>
+                <label
+                    for="confirmPassword"
+                    class="block text-sm font-medium mb-2">
+
+                    Confirmez le mot de passe
+
+                </label>
+
+                <input
+                    id="confirmPassword"
+                    type="password"
+                    placeholder="********"
+                    class="w-full border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                >
+            </div>
+
+            <!-- Bouton -->
+            <button
+                type="submit"
+                class="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-semibold transition">
+
+                Créer un compte
+
+            </button>
+
+        </form>
+
+        <!-- Lien -->
+        <p class="text-center mt-6 text-sm">
+
+            Vous avez déjà un compte ?
+
+            <a
+                href="Index.html"
+                class="text-blue-600 font-semibold hover:underline">
+
+                Se connecter
+
+            </a>
+
+        </p>
+
+    </div>
+
+    <script src="js/config.js"></script>
+    <script src="js/registre.js"></script>
+
+</body>
+</html>
