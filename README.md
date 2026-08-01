@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Capstone-1-Kadea-Chat-Clone-Whatsapp-Web-
 # Kadea Chat
 
@@ -95,3 +96,4 @@ Ce projet est statique. Il suffit d'ouvrir les pages HTML dans un navigateur ou 
 - Le code est conçu pour fonctionner avec une API distante (`https://kadea-chat-api.onrender.com`).
 - Les données utilisateur sont gérées uniquement dans `localStorage`, sans backend propre au projet.
 - Pour rendre l'application plus solide, implémenter la gestion des erreurs réseau, le chargement des conversations dynamiques et la validation côté serveur.
+
